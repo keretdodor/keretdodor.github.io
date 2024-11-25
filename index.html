@@ -1,150 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Your Name - DevOps Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="DevOps Engineer Portfolio">
+    <meta name="keywords" content="DevOps, Cloud, CI/CD, Infrastructure as Code" />
+    
+    <!-- Custom CSS & Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div class="wrapper">
-        <header class="main-header">
-            <div class="header-content">
-                <div class="profile-image">
-                    <img src="your-profile-image.jpg" alt="Your Name">
-                </div>
-                <div class="header-text">
-                    <h1>Your Full Name</h1>
-                    <h2>Senior DevOps Engineer | Cloud Architect</h2>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Your Name</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li class="page-scroll"><a href="#about">About</a></li>
+                    <li class="page-scroll"><a href="#portfolio">Projects</a></li>
+                    <li class="page-scroll"><a href="#skills">Technologies</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="profile-pic" />
+                    <div class="intro-text">
+                        <span class="name">Your Name</span>
+                        <hr class="star-light" />
+                        <span class="skills">DevOps Engineer | Cloud Architect | Infrastructure Specialist</span>
+                        <div class="social-links mt-4">
+                            <a href="https://github.com/yourusername" class="btn-social btn-outline">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" class="btn-social btn-outline">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:your.email@example.com" class="btn-social btn-outline">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main class="main-content">
-            <section class="about-section">
-                <div class="section-header">
-                    <h2>About Me</h2>
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
                 </div>
-                <div class="section-content">
-                    <p>Passionate DevOps Engineer with extensive experience in cloud infrastructure, 
-                    continuous integration, and automated deployment strategies. Proven track record 
-                    of optimizing development workflows and implementing scalable, efficient systems 
-                    across diverse technology landscapes.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>DevOps Engineer with expertise in automating and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes. Experienced in building and maintaining infrastructure as code using Terraform and implementing monitoring solutions.</p>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <section class="technologies-section">
-                <div class="section-header">
+    <!-- Portfolio/Projects Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>DevOps Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="portfolio-flex-row">
+                <!-- Sample Project 1 -->
+                <div class="portfolio-flex-item portfolio-item">
+                    <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>CI/CD Pipeline</h3>
+                                <p>Jenkins, Docker, Kubernetes</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/project1.png" class="img-responsive" alt="CI/CD Pipeline">
+                    </a>
+                </div>
+                <!-- Sample Project 2 -->
+                <div class="portfolio-flex-item portfolio-item">
+                    <a href="#portfolioModal-2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>Infrastructure as Code</h3>
+                                <p>Terraform, AWS</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/project2.png" class="img-responsive" alt="IaC Project">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="success">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
                     <h2>Technologies & Tools</h2>
+                    <hr class="star-light">
                 </div>
-                <div class="technologies-grid">
-                    <div class="tech-item">
-                        <i class="fab fa-docker"></i>
-                        <span>Docker</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-cloud"></i>
-                        <span>Kubernetes</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-server"></i>
-                        <span>Terraform</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-jenkins"></i>
-                        <span>Jenkins</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-linux"></i>
-                        <span>Linux</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-code"></i>
-                        <span>Ansible</span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects-section">
-                <div class="section-header">
-                    <h2>Projects</h2>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Microservices Deployment Platform</h3>
-                            <div class="project-links">
-                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="external-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Designed and implemented a scalable microservices deployment platform 
-                            using Kubernetes and Docker, reducing deployment times by 60%.</p>
-                            <ul>
-                                <li>Containerization of legacy applications</li>
-                                <li>Implemented CI/CD pipelines</li>
-                                <li>Optimized cloud resource utilization</li>
-                            </ul>
-                        </div>
-                        <div class="project-technologies">
-                            <span class="tech-badge">Docker</span>
-                            <span class="tech-badge">Kubernetes</span>
-                            <span class="tech-badge">AWS</span>
-                            <span class="tech-badge">Jenkins</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Infrastructure as Code Framework</h3>
-                            <div class="project-links">
-                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="external-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Developed a comprehensive Infrastructure as Code solution 
-                            using Terraform and Ansible, enabling rapid and consistent 
-                            multi-environment deployments.</p>
-                            <ul>
-                                <li>Created reusable infrastructure modules</li>
-                                <li>Implemented zero-downtime deployments</li>
-                                <li>Enhanced security and compliance</li>
-                            </ul>
-                        </div>
-                        <div class="project-technologies">
-                            <span class="tech-badge">Terraform</span>
-                            <span class="tech-badge">Ansible</span>
-                            <span class="tech-badge">CloudFormation</span>
-                            <span class="tech-badge">GCP</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="main-footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Your Name. All Rights Reserved.</p>
             </div>
-        </footer>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Cloud Platforms</h3>
+                    <ul class="list-unstyled">
+                        <li>AWS (Amazon Web Services)</li>
+                        <li>Azure</li>
+                        <li>Google Cloud Platform</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>DevOps Tools</h3>
+                    <ul class="list-unstyled">
+                        <li>Jenkins</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Terraform</li>
+                        <li>Ansible</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Monitoring & Logging</h3>
+                    <ul class="list-unstyled">
+                        <li>Prometheus</li>
+                        <li>Grafana</li>
+                        <li>ELK Stack</li>
+                        <li>CloudWatch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://github.com/yourusername" class="btn-social btn-outline">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/yourusername" class="btn-social btn-outline">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:your.email@example.com" class="btn-social btn-outline">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
 </body>
 </html>
