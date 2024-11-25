@@ -86,7 +86,7 @@
         </div>
     </section>
 
-  <!-- Projects Section -->
+ <!-- Projects Section -->
 <section id="portfolio">
     <div class="container">
         <div class="row">
@@ -95,26 +95,35 @@
                 <hr class="star-primary">
             </div>
         </div>
-        <div class="portfolio-flex-row">
+        <div class="row">
             <!-- Project 1 -->
-            <div class="portfolio-flex-item portfolio-item">
+            <div class="col-sm-6 portfolio-item">
                 <a href="#projectModal1" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fas fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/project1.png" class="img-responsive" alt="Project 1">
+                    <img src="img/portfolio/project1.png" class="img-responsive" alt="CI/CD Pipeline Project">
                 </a>
             </div>
-            
-            <!-- Add more project items as needed -->
+            <!-- Project 2 -->
+            <div class="col-sm-6 portfolio-item">
+                <a href="#projectModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/project2.png" class="img-responsive" alt="Infrastructure as Code">
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Project Modals -->
-<!-- Project Modal 1 -->
+<!-- Modal for Project 1 -->
 <div class="modal fade project-modal" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -127,55 +136,92 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="img/portfolio/project1.png" class="img-responsive project-image" alt="Project 1">
+                        <img src="img/portfolio/project1.png" class="img-responsive project-image" alt="CI/CD Pipeline Project">
                     </div>
                     <div class="col-md-6">
-                        <div class="project-details">
-                            <h3>Project Overview</h3>
-                            <p>Automated CI/CD pipeline for microservices architecture using Jenkins, Docker, and Kubernetes.</p>
-                            
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Automated build and deployment process</li>
-                                <li>Container orchestration with Kubernetes</li>
-                                <li>Automated testing and quality gates</li>
-                            </ul>
-
-                            <h3>Technologies Used</h3>
-                            <div class="tech-stack">
-                                <div class="tech-item" title="Jenkins">
-                                    <i class="devicon-jenkins-plain colored"></i>
-                                    <span>Jenkins</span>
-                                </div>
-                                <div class="tech-item" title="Docker">
-                                    <i class="devicon-docker-plain colored"></i>
-                                    <span>Docker</span>
-                                </div>
-                                <div class="tech-item" title="Kubernetes">
-                                    <i class="devicon-kubernetes-plain colored"></i>
-                                    <span>Kubernetes</span>
-                                </div>
-                                <div class="tech-item" title="AWS">
-                                    <i class="devicon-amazonwebservices-original colored"></i>
-                                    <span>AWS</span>
-                                </div>
+                        <h3>Project Overview</h3>
+                        <p>Automated CI/CD pipeline for microservices architecture using Jenkins, Docker, and Kubernetes.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Automated build and deployment process</li>
+                            <li>Container orchestration with Kubernetes</li>
+                            <li>Automated testing and quality gates</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div class="tech-stack">
+                            <div class="tech-item" title="Jenkins">
+                                <i class="devicon-jenkins-plain colored"></i> Jenkins
                             </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                                <a href="https://your-demo-link.com" class="btn btn-success" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
+                            <div class="tech-item" title="Docker">
+                                <i class="devicon-docker-plain colored"></i> Docker
                             </div>
+                            <div class="tech-item" title="Kubernetes">
+                                <i class="devicon-kubernetes-plain colored"></i> Kubernetes
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://your-demo-link.com" class="btn btn-success" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+</div>
+
+<!-- Modal for Project 2 -->
+<div class="modal fade project-modal" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h2 class="modal-title">Infrastructure as Code</h2>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/portfolio/project2.png" class="img-responsive project-image" alt="Infrastructure as Code">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Project Overview</h3>
+                        <p>Designed and deployed cloud infrastructure using Terraform and Ansible for a scalable web application.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Automated resource provisioning</li>
+                            <li>Versioned infrastructure</li>
+                            <li>Configuration management with Ansible</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div class="tech-stack">
+                            <div class="tech-item" title="Terraform">
+                                <i class="devicon-terraform-plain colored"></i> Terraform
+                            </div>
+                            <div class="tech-item" title="Ansible">
+                                <i class="devicon-ansible-plain colored"></i> Ansible
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project2" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://your-demo-link.com" class="btn btn-success" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- Skills Section -->
     <section id="skills" class="success">
         <div class="container">
