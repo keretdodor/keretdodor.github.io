@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -31,11 +31,16 @@ header {
   background-color: var(--navy-blue);
   color: var(--white);
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
@@ -43,60 +48,62 @@ header h1 {
   display: block;
   margin-top: 10px;
   color: var(--yellow);
+  font-size: 1rem;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .btn-social {
   color: var(--yellow);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  transition: all 0.3s ease;
-  border: 2px solid var(--yellow);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  transition: transform 0.3s ease;
 }
 
 .btn-social:hover {
-  background-color: var(--yellow);
-  color: var(--navy-blue);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-/* Section Styles */
-section {
-  padding: 50px 0;
+/* About Section Slide */
+.about-slide {
+  transform: translateY(-50px);
+  background-color: var(--white);
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
-.section-title {
+.about-content {
   text-align: center;
-  color: var(--navy-blue);
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-}
-
-/* About Section */
-.about-content p {
-  margin-bottom: 15px;
-  text-align: center;
+  padding: 30px;
 }
 
 /* Projects Section */
-#projects .project-card {
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
   background-color: var(--light-gray);
   border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 25px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-card.left {
+  justify-self: end;
+}
+
+.project-card.right {
+  justify-self: start;
 }
 
 .project-card h3 {
@@ -105,7 +112,7 @@ section {
 }
 
 .project-description ul {
-  margin-left: 30px;
+  margin-left: 20px;
   margin-top: 10px;
 }
 
@@ -113,7 +120,6 @@ section {
   display: flex;
   gap: 10px;
   margin-top: 15px;
-  flex-wrap: wrap;
 }
 
 .tech-tag {
@@ -121,31 +127,8 @@ section {
   color: var(--white);
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  font-size: 0.8rem;
 }
-
-.project-links {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.project-links a {
-  text-decoration: none;
-  color: var(--navy-blue);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition: color 0.3s ease;
-}
-
-.project-links a:hover {
-  color: var(--yellow);
-}
-
 /* Timeline Styles */
 .timeline {
   position: relative;
@@ -206,11 +189,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .container {
-      width: 95%;
+  .projects-grid {
+      grid-template-columns: 1fr;
   }
 
-  .project-card {
-      padding: 20px;
+  .project-card.left,
+  .project-card.right {
+      justify-self: center;
   }
 }
