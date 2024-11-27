@@ -5,32 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dor Keret - DevOps Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="header-content">
-                <h1>Dor Keret</h1>
-                <span class="skills">DevOps Engineer | Cloud Architect</span>
-                <div class="social-links">
-                    <a href="https://github.com/dorkeret" class="btn-social">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/dorkeret" class="btn-social">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:dor.keret@example.com" class="btn-social">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+            <h1>Dor Keret</h1>
+            <span class="skills">DevOps Engineer | Cloud Architect | Infrastructure Specialist</span>
+            <div class="social-links mt-4">
+                <a href="https://github.com/dorkeret" class="btn-social btn-outline">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/dorkeret" class="btn-social btn-outline">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:dor.keret@example.com" class="btn-social btn-outline">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </header>
 
-    <section id="about" class="about-slide">
+    <section id="about">
         <div class="container">
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p>Hi, I'm Dor Keret, a passionate DevOps Engineer with a journey of continuous learning and innovation. My expertise lies in bridging the gap between development and operations, creating seamless, efficient software delivery pipelines.</p>
                 <p>I specialize in cloud infrastructure, containerization, and building scalable systems that empower teams to deliver high-quality software faster and more reliably.</p>
@@ -41,65 +39,49 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card left">
-                    <h3>DISKO</h3>
-                    <div class="project-description">
-                        <p>Transformed DISKO's CLI-based system into a web-based GUI using Next.js.</p>
-                        <ul>
-                            <li>Optimized deployment with Kubernetes</li>
-                            <li>Automated CI/CD with GitHub Actions</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">Kubernetes</span>
-                    </div>
+            
+            <div class="project-card">
+                <h3>DISKO</h3>
+                <div class="project-description">
+                    <p>Transformed DISKO's CLI-based system into a web-based GUI using Next.js, improving user interaction and accessibility.</p>
+                    <p>Key achievements:</p>
+                    <ul>
+                        <li>Optimized deployment with Kubernetes, Helm, and ArgoCD</li>
+                        <li>Automated CI/CD pipelines with GitHub Actions</li>
+                        <li>Implemented Git workflow with DEV and PROD branches</li>
+                        <li>Enhanced development processes through DevOps tools</li>
+                    </ul>
                 </div>
-
-                <div class="project-card right">
-                    <h3>Cloud Migration</h3>
-                    <div class="project-description">
-                        <p>Executed comprehensive cloud migration for enterprise infrastructure.</p>
-                        <ul>
-                            <li>Migrated to AWS cloud</li>
-                            <li>Implemented Terraform IaC</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Terraform</span>
-                    </div>
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-react"></i>Next.js</span>
+                    <span class="tech-tag"><i class="fas fa-dharmachakra"></i>Kubernetes</span>
+                    <span class="tech-tag"><i class="fas fa-ship"></i>Helm</span>
+                    <span class="tech-tag"><i class="fab fa-github"></i>GitHub Actions</span>
                 </div>
-
-                <div class="project-card left">
-                    <h3>Monitoring Solution</h3>
-                    <div class="project-description">
-                        <p>Developed centralized monitoring infrastructure.</p>
-                        <ul>
-                            <li>Implemented Prometheus</li>
-                            <li>Created Grafana dashboards</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Prometheus</span>
-                        <span class="tech-tag">Grafana</span>
-                    </div>
+                <div class="project-links">
+                    <a href="https://github.com/dorkeret/disko-web" target="_blank">
+                        <i class="fab fa-github"></i> Frontend Repository
+                    </a>
+                    <a href="https://github.com/dorkeret/disko-back" target="_blank">
+                        <i class="fab fa-github"></i> Backend Repository
+                    </a>
                 </div>
+            </div>
 
-                <div class="project-card right">
-                    <h3>CI/CD Pipeline</h3>
-                    <div class="project-description">
-                        <p>Designed robust continuous integration and deployment pipeline.</p>
-                        <ul>
-                            <li>GitHub Actions workflows</li>
-                            <li>Automated testing</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-tag">GitHub Actions</span>
-                        <span class="tech-tag">Jenkins</span>
-                    </div>
+            <div class="project-card">
+                <h3>Cloud Migration Project</h3>
+                <div class="project-description">
+                    <p>Executed comprehensive cloud migration for enterprise infrastructure.</p>
+                    <ul>
+                        <li>Migrated on-premises systems to AWS cloud</li>
+                        <li>Implemented infrastructure as code using Terraform</li>
+                        <li>Developed robust security and compliance strategies</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-aws"></i>AWS</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i>Terraform</span>
+                    <span class="tech-tag"><i class="fas fa-lock"></i>Security</span>
                 </div>
             </div>
         </div>
