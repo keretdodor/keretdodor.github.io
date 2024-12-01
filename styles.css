@@ -430,14 +430,14 @@ footer {
   }
 }
 .argo-icon {
-  font-size: 3rem;
-  color: var(--navy-blue);
-  margin-bottom: 10px;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin: 0 auto 10px;
+  filter: grayscale(0%) brightness(0.4);
   transition: transform 0.3s ease;
-  width: auto;
-  height: auto;
 }
 
-.argo-icon:hover {
+.tech-item:hover .argo-icon {
   transform: scale(1.1);
 }
