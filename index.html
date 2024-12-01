@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dor Keret - DevOps Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="about-section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
@@ -39,49 +40,92 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            
-            <div class="project-card">
-                <h3>DISKO</h3>
-                <div class="project-description">
-                    <p>Transformed DISKO's CLI-based system into a web-based GUI using Next.js, improving user interaction and accessibility.</p>
-                    <p>Key achievements:</p>
-                    <ul>
-                        <li>Optimized deployment with Kubernetes, Helm, and ArgoCD</li>
-                        <li>Automated CI/CD pipelines with GitHub Actions</li>
-                        <li>Implemented Git workflow with DEV and PROD branches</li>
-                        <li>Enhanced development processes through DevOps tools</li>
-                    </ul>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>DISKO</h3>
+                    <div class="project-description">
+                        <p>Transformed DISKO's CLI-based system into a web-based GUI using Next.js, improving user interaction and accessibility.</p>
+                        <ul>
+                            <li>Optimized deployment with Kubernetes, Helm, and ArgoCD</li>
+                            <li>Automated CI/CD pipelines with GitHub Actions</li>
+                            <li>Implemented Git workflow with DEV and PROD branches</li>
+                            <li>Enhanced development processes through DevOps tools</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-react"></i> Next.js</span>
+                        <span class="tech-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        <span class="tech-tag"><i class="fas fa-ship"></i> Helm</span>
+                        <span class="tech-tag"><i class="fab fa-github"></i> GitHub Actions</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dorkeret/disko-web" target="_blank">
+                            <i class="fab fa-github"></i> Frontend Repository
+                        </a>
+                        <a href="https://github.com/dorkeret/disko-back" target="_blank">
+                            <i class="fab fa-github"></i> Backend Repository
+                        </a>
+                    </div>
                 </div>
-                <div class="tech-stack">
-                    <span class="tech-tag"><i class="fab fa-react"></i>Next.js</span>
-                    <span class="tech-tag"><i class="fas fa-dharmachakra"></i>Kubernetes</span>
-                    <span class="tech-tag"><i class="fas fa-ship"></i>Helm</span>
-                    <span class="tech-tag"><i class="fab fa-github"></i>GitHub Actions</span>
+                <div class="project-card">
+                    <h3>GCP MongoDB & GKE</h3>
+                    <div class="project-description">
+                        <p>
+                            This project deploys a highly available and fault-tolerant architecture on Google Cloud Platform (GCP) using Terraform. 
+                            It provisions a secure environment featuring a MongoDB replica set and a GKE cluster, each hosted on private subnets 
+                            within a shared VPC. Emphasizing infrastructure as code (IaC), the solution incorporates modular design, least privilege 
+                            principles, and best practices for scalability, IAM control, and network security.
+                        </p>
+                        <ul>
+                            <li>Secure Architecture: Private subnets for MongoDB and GKE, with public access via Bastion Host.</li>
+                            <li>Scalability: Horizontal Pod Autoscaler and spot node pools ensure cost-effective scaling.</li>
+                            <li>Automation: Modularized Terraform code for efficient and reusable infrastructure provisioning.</li>
+                            <li>Enhanced Access: TLS-based ingress and Identity-Aware Proxy (IAP) for secure application and Argo CD integration.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-google"></i> Google Cloud Platform</span>
+                        <span class="tech-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                        
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dorkeret/gcp-terraform-project" target="_blank">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/dorkeret/disko-web" target="_blank">
-                        <i class="fab fa-github"></i> Frontend Repository
-                    </a>
-                    <a href="https://github.com/dorkeret/disko-back" target="_blank">
-                        <i class="fab fa-github"></i> Backend Repository
-                    </a>
+                <div class="project-card">
+                    <h3>Infrastructure Monitoring</h3>
+                    <div class="project-description">
+                        <p>Implemented an advanced monitoring system for hybrid cloud environments.</p>
+                        <ul>
+                            <li>Configured Prometheus and Grafana for real-time alerts</li>
+                            <li>Integrated Slack notifications for incident management</li>
+                            <li>Reduced response times by 40%</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-slack"></i> Slack</span>
+                        <span class="tech-tag"><i class="fas fa-chart-line"></i> Grafana</span>
+                        <span class="tech-tag"><i class="fas fa-bell"></i> Prometheus</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Cloud Migration Project</h3>
-                <div class="project-description">
-                    <p>Executed comprehensive cloud migration for enterprise infrastructure.</p>
-                    <ul>
-                        <li>Migrated on-premises systems to AWS cloud</li>
-                        <li>Implemented infrastructure as code using Terraform</li>
-                        <li>Developed robust security and compliance strategies</li>
-                    </ul>
-                </div>
-                <div class="tech-stack">
-                    <span class="tech-tag"><i class="fab fa-aws"></i>AWS</span>
-                    <span class="tech-tag"><i class="fas fa-server"></i>Terraform</span>
-                    <span class="tech-tag"><i class="fas fa-lock"></i>Security</span>
+                <div class="project-card">
+                    <h3>Containerized Microservices</h3>
+                    <div class="project-description">
+                        <p>Designed and deployed containerized microservices architecture for a fintech platform.</p>
+                        <ul>
+                            <li>Used Docker for containerization</li>
+                            <li>Deployed to Kubernetes for scaling and resilience</li>
+                            <li>Enhanced load handling by 35%</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        <span class="tech-tag"><i class="fas fa-network-wired"></i> Microservices</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,6 +147,35 @@
                     <p>Advanced training in cloud infrastructure, security, and scalable system design.</p>
                     <p>2023 - 4 Months</p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Resume Download Section -->
+     <section id="resume" class="resume-section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            
+            <div class="resume-preview-container">
+                <input type="checkbox" id="resume-preview-toggle" class="resume-preview-toggle">
+                <label for="resume-preview-toggle" class="resume-preview-toggle-label">
+                    Preview Resume
+                </label>
+
+                <div class="resume-preview">
+                    <div class="resume-preview-content">
+                        <!-- Replace with actual resume preview image or PDF embed -->
+                        <img src="/api/placeholder/800/1100" alt="Resume Preview" />
+                        <p>Click the download button below to get the full resume.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-container">
+                <p>Download my full resume to learn more about my experience and qualifications.</p>
+                <a href="assets/resume.pdf" download class="download-btn">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
             </div>
         </div>
     </section>
@@ -128,21 +201,51 @@
                     <span>GitHub</span>
                 </div>
                 <div class="tech-item">
-                    <i class="fas fa-server"></i>
+                    <i class="fas fa-code-branch"></i>
                     <span>Terraform</span>
                 </div>
                 <div class="tech-item">
-                    <i class="fas fa-code-branch"></i>
+                    <i class="fab fa-jenkins"></i>
                     <span>Jenkins</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-terminal"></i>
+                    <span>Bash</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-linux"></i>
+                    <span>Linux</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-google"></i>
+                    <span>GCP</span>
                 </div>
             </div>
         </div>
     </section>
 
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Dor Keret. All Rights Reserved.</p>
+            <div class="social-links mt-4">
+                <a href="https://github.com/dorkeret" class="btn-social btn-outline">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/dorkeret" class="btn-social btn-outline">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:dor.keret@example.com" class="btn-social btn-outline">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
