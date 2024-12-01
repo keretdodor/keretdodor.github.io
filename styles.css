@@ -60,7 +60,7 @@
         }
 
         #resume-preview-toggle:checked ~ .resume-preview {
-            max-height: 600px; /* Adjust based on your resume preview height */
+            max-height: 1000px; 
             opacity: 1;
             transform: rotateX(0);
         }
