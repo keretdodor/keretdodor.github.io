@@ -195,9 +195,9 @@ section {
 
 .about-section {
   background: var(--card-bg);
-  max-width: 700px;
-  margin: -3rem auto 2rem;
-  padding: 2rem;
+  max-width: 900px; /* Increase width */
+  margin: -3rem auto 1rem; /* Adjust margin to reduce height */
+  padding: 1rem; /* Reduce padding */
   border-radius: 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -205,10 +205,10 @@ section {
 }
 
 .about-content {
-  font-size: 0.95rem;
+  font-size: 0.95rem; /* Adjust font size */
   color: var(--text-color);
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
+  margin-bottom: 0.8rem; /* Adjust bottom margin */
+  line-height: 1.4; /* Adjust line height for compact text */
 }
 
 /* Projects Section */
