@@ -430,7 +430,6 @@ footer {
   }
 }
 .argo-icon {
-  width: 24px;
-  height: 24px;
+  width: 100px;
   fill: #14213D; /* Match your icon color */
 }
