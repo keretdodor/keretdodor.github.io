@@ -215,13 +215,13 @@ section {
         .projects-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-          gap: 60px; 
+          gap: 100px; 
         }
 
         .project-card {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            gap: 100px;
             align-items: start;
             background-color: var(--light-gray);
             border-radius: 10px;
