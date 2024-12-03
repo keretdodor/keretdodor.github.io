@@ -230,7 +230,10 @@ section {
   gap: 30px;
   align-items: flex-start;  /* Align items to top */
 }
-
+.project-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
 .project-content {
   flex: 1;  /* Take remaining space */
   display: flex;
@@ -276,12 +279,21 @@ section {
   gap: 5px;
 }
 
+.tech-tag:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: var(--yellow);
+  color: var(--navy-blue);
+ }
+ 
 .project-links {
   display: flex;
   gap: 15px;
   margin-top: 15px;
 }
 
+.project-links a:hover {
+  color: var(--yellow);
+}
 .project-links a {
   color: var(--navy-blue);
   text-decoration: none;
